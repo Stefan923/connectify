@@ -22,4 +22,5 @@ class Server:
     def stop(self):
         if self.active:
             self.socket.close()
+            self.socket = None
             self.active = False
